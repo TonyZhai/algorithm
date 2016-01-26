@@ -1,5 +1,7 @@
 package com.tonyzhai.practise;
 
+import com.tonyzhai.algorithm.sort.ShellSort;
+
 import java.util.Random;
 
 /**
@@ -48,6 +50,11 @@ public class SortTest {
         startTime = System.currentTimeMillis();
         BubbleSort.sort(array);
         System.out.println("BubbleSort use time is " + (System.currentTimeMillis() - startTime) + "ms");
+        printArray(array);
+        array = template.clone();
+        startTime = System.currentTimeMillis();
+        ShellSort.sort(array);
+        System.out.println("ShellSort use time is " + (System.currentTimeMillis() - startTime) + "ms");
         printArray(array);
     }
 }
