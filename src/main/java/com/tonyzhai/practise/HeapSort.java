@@ -22,6 +22,10 @@ public class HeapSort {
         for(int i = array.length / 2; i > 0; i--){
             adjustMaxHeap(array, i, array.length);
         }
+        //it must be from the bottom up
+//        for(int i = 0; i < array.length / 2; i++){
+//            adjustMaxHeap(array, i + 1, array.length);
+//        }
     }
 
     private static void adjustMaxHeap(int[] array, int parentSeq, int heapSize) {
