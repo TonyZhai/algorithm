@@ -12,7 +12,7 @@ public class InsertionSort {
 			array[j + 1] = current;
 		}
 	}
-	
+
 	public static void main(String[] args){
 		int[] array = {29, 11, 100, 109, 0, 1, 111};
 		sort(array);

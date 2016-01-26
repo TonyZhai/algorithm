@@ -11,12 +11,16 @@ public class InsertionSort {
         if(array.length == 0 || array.length == 1){
             return;
         }
+        int current = 0;
+        int j = 0;
         for(int i = 1; i < array.length; i++){
-            for(int j = i; j > 0; j--){
-                if(array[j] < array[j - 1]){
-                    SortUtils.swap(array, j, j - 1);
-                }
+            current = array[i];
+            j = i - 1;
+            while(j >= 0 && array[j] > current){
+                array[j + 1] = array[j];
+                j--;
             }
+            array[j + 1] = current;
         }
     }
 }

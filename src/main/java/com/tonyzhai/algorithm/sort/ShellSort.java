@@ -35,7 +35,7 @@ public class ShellSort {
             for(out = h; out < len; out++){ // 外层通过out确定每组插入排序的第二个数据项
                 // 以下代码就是对子序列进行的插入排序算法
                 tmp = array[out];
-                in = out;
+                in = out - h;
                 /*
                  * 比较插入排序while循环的写法，这里的while循环与h有关，所以判定就与h有关，包括 in -= h语句
                  * while(in > 0 && array[in - 1] > tmp){
@@ -45,11 +45,11 @@ public class ShellSort {
                  * array[in] = tmp;
                  *
                  */
-                while(in > h -1 && array[in - h] >= tmp){
-                    array[in] = array[in - h];
+                while(in >= h - 1 && array[in] > tmp){
+                    array[in + h] = array[in];
                     in -= h;
                 }
-                array[in] = tmp;
+                array[in + h] = tmp;
 //              for(int i = 0; i < len; i++)
 //                  System.out.print(array[i] + " ");
 //              System.out.println();

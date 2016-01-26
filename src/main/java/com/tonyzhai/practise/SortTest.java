@@ -1,17 +1,15 @@
 package com.tonyzhai.practise;
 
-import com.tonyzhai.algorithm.sort.ShellSort;
-
 import java.util.Random;
 
 /**
  * Created by Administrator on 1/26/2016.
  */
 public class SortTest {
-    static int[] template = new int[30];
+    static int[] template = new int[10];
     static{
         for(int i = 0; i < template.length; i++){
-            template[i] = new Random().nextInt(1000);
+            template[i] = new Random().nextInt(10);
         }
     }
     public static void printArray(int[] array){
@@ -21,6 +19,8 @@ public class SortTest {
         System.out.println();
     }
     public static void main(String[] args) {
+        System.out.println("original array is ");
+        printArray(template);
         int[] array = template.clone();
         long startTime = System.currentTimeMillis();
         QuickSort.sort(array);
