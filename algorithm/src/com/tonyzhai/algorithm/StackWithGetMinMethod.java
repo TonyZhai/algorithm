@@ -3,26 +3,26 @@ package com.tonyzhai.algorithm;
 import java.util.LinkedList;
 
 /**
- * 经典算法题2
- * 		设计包含min函数的栈
- * 
- * 题目
- * 		定义栈的数据结构，要求添加一个min函数，能够得到栈的最小元素。
- *		要求函数min、push以及pop的时间复杂度都是O(1)。
- * 
+ * ?????2
+ * 		????min????
+ *
+ * ??
+ * 		???????????????min??????????????
+ *		????min?push??pop????????O(1)?
+ *
  * @author tony
  */
 public class StackWithGetMinMethod {
 	private int[] data;
 	private LinkedList<Integer> indexList;
 	private int size;
-	
+
 	public StackWithGetMinMethod(int size){
 		data = new int[size];
 		size = 0;
 		indexList = new LinkedList<>();
 	}
-	
+
 	public void pop(){
 		if(size == 0){
 			System.out.println("stack is empty");
@@ -34,7 +34,7 @@ public class StackWithGetMinMethod {
 		}
 		size--;
 	}
-	
+
 	public void push(int value){
 		if(size == 0){
 			indexList.addFirst(size);
@@ -47,15 +47,15 @@ public class StackWithGetMinMethod {
 		data[size] = value;
 		size++;
 	}
-	
-	
+
+
 	public int getMinValue(){
 		if(indexList.size() == 0){
 			return - 1;
 		}
 		return data[indexList.get(0)];
 	}
-	
+
 	public static void main(String[] args){
 		int[] data = {5, 4, 2, 2, 6, 2, 1, 1, 1, 3};
 		StackWithGetMinMethod stack = new StackWithGetMinMethod(10);

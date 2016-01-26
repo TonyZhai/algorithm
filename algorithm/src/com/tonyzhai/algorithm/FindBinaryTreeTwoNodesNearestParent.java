@@ -2,7 +2,7 @@ package com.tonyzhai.algorithm;
 
 import java.util.ArrayList;
 
-public class FindBinaryTreenTwoNodesNearestParent {
+public class FindBinaryTreeTwoNodesNearestParent {
     private Node root;
     private ArrayList<Integer> temp1 = new ArrayList<>();
     private ArrayList<Integer> temp2 = new ArrayList<>();
@@ -26,7 +26,7 @@ public class FindBinaryTreenTwoNodesNearestParent {
     public void setRoot(Node root) {
         this.root = root;
     }
-    public FindBinaryTreenTwoNodesNearestParent(){}
+    public FindBinaryTreeTwoNodesNearestParent(){}
 
     class Node{
         private int data;
@@ -93,7 +93,7 @@ public class FindBinaryTreenTwoNodesNearestParent {
     }
 
     public static void main(String[] args){
-        FindBinaryTreenTwoNodesNearestParent tree = new FindBinaryTreenTwoNodesNearestParent();
+        FindBinaryTreeTwoNodesNearestParent tree = new FindBinaryTreeTwoNodesNearestParent();
         Node node1 = tree.new Node(1);
         Node node2 = tree.new Node(2);
         Node node3 = tree.new Node(3);
