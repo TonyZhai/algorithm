@@ -10,7 +10,7 @@ import java.util.List;
  * @author Tony Zhai
  */
 public class PackageMaxValue {
-    public static int getMaxValue(java.lang.Package p, List<Goods> goodsList){
+    public static int getMaxValue(Package p, List<Goods> goodsList){
         int[][] matrix = new int[goodsList.size() + 1][p.getCapacity() + 1];
         for(int i = 0 ; i < goodsList.size(); i++){
             Goods goods = goodsList.get(i);
@@ -30,7 +30,7 @@ public class PackageMaxValue {
         return matrix[goodsList.size()][p.getCapacity()];
     }
 
-    public static int getMaxValue1(java.lang.Package pac, List<Goods> goodsList){
+    public static int getMaxValue1(Package pac, List<Goods> goodsList){
         int[][] m = new int[goodsList.size() + 1][pac.getCapacity() + 1];
         int[] w = new int[goodsList.size()];
         int[] v = new int[goodsList.size()];
@@ -74,7 +74,7 @@ public class PackageMaxValue {
         Goods goods2 = new Goods(4, 5);
         Goods goods3 = new Goods(5, 6);
 
-        java.lang.Package p = new java.lang.Package(10);
+        Package p = new Package(10);
 
         int maxValue = getMaxValue(p, Arrays.asList(goods1, goods2, goods3));
         System.out.println("max value is " + maxValue);

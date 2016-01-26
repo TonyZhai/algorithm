@@ -5,7 +5,7 @@ public class FindSameNumber {
         int[] a = {1,2,3,4,5,8,90,99};
         int[] b = {1,3,4,6,9,10,90,100};
         String sameStr = findSameNumber(a,b);
-        System.out.println("?????????"+sameStr);
+        System.out.println("result is " + sameStr);
     }
 
 

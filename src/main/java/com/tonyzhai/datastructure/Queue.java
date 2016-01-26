@@ -54,19 +54,19 @@ public class Queue {
 		queue.enqueue(4);
 		queue.enqueue(5);
 		queue.enqueue(6);
-        System.out.println("dequeue£º" + queue.dequeue());  
+        System.out.println("dequeue" + queue.dequeue());
         System.out.println("queue size is " + queue.size());  
-        System.out.println("dequeue£º" + queue.dequeue());  
+        System.out.println("dequeue" + queue.dequeue());
         System.out.println("queue size is " + queue.size());  
-        System.out.println("dequeue£º" + queue.dequeue());  
+        System.out.println("dequeue" + queue.dequeue());
         System.out.println("queue size is " + queue.size());  
-        System.out.println("dequeue£º" + queue.dequeue());  
+        System.out.println("dequeue" + queue.dequeue());
         System.out.println("queue size is " + queue.size());  
-        System.out.println("dequeue£º" + queue.dequeue());  
+        System.out.println("dequeue" + queue.dequeue());
         System.out.println("queue size is " + queue.size());  
-        System.out.println("dequeue£º" + queue.dequeue());  
+        System.out.println("dequeue" + queue.dequeue());
         System.out.println("queue size is " + queue.size());  
-        System.out.println("dequeue£º" + queue.dequeue());  
+        System.out.println("dequeue" + queue.dequeue());
         System.out.println("queue size is " + queue.size());  
 	}
 }
