@@ -24,6 +24,10 @@ public class HeapSort {
         for(int i = array.length/2; i > 0; i--){
             maxHeapify(array, i, array.length);
         }
+        //why index cannot start with 0
+//        for(int i = 0; i < array.length / 2; i++){
+//            maxHeapify(array, i + 1, array.length);
+//        }
     }
 
     private static void maxHeapify(int[] array, int parentSeq, int heapSize) {
