@@ -1,4 +1,6 @@
-package com.tonyzhai.practise;
+package com.tonyzhai.practise.one;
+
+import com.tonyzhai.practise.SortUtils;
 
 /**
  * Created by Administrator on 1/26/2016.

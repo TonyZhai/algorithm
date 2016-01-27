@@ -1,4 +1,4 @@
-package com.tonyzhai.practise;
+package com.tonyzhai.practise.one;
 
 /**
  * Created by Administrator on 1/26/2016.

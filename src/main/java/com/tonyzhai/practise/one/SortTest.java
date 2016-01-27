@@ -1,4 +1,4 @@
-package com.tonyzhai.practise;
+package com.tonyzhai.practise.one;
 
 import java.util.Random;
 
