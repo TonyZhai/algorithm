@@ -9,4 +9,8 @@ public class SortUtils {
         array[i] = array[j];
         array[j] = temp;
     }
+
+    public static boolean isArrayAvailable(int[] array){
+        return array != null && array.length > 1;
+    }
 }
