@@ -32,7 +32,7 @@ public class BinaryTree<T extends  Comparable<T>> {
         }
     }
 
-    public void levelOrderTraverse(Node node){
+    public void breadthFirstTraverse(Node node){
         if(node != null){
             Queue<Node> queue = new LinkedList<>();
             queue.add(node);
@@ -44,6 +44,20 @@ public class BinaryTree<T extends  Comparable<T>> {
             }
         }
     }
+
+    public void depthFirstTraverse(Node node){
+        if(node != null){
+            Stack<Node> stack = new Stack<>();
+            stack.push(node);
+            while(!stack.isEmpty()){
+                Node temp = stack.pop();
+                System.out.print(temp.data + " ");
+                if(temp.right != null) stack.push(temp.right);
+                if(temp.left != null) stack.push(temp.left);
+            }
+        }
+    }
+
 
     public void addNode(T data){
         Node node = new Node(data);
@@ -238,13 +252,16 @@ public class BinaryTree<T extends  Comparable<T>> {
         tree.postOrderTraverse(tree.root);
         System.out.println();
         System.out.println("level order");
-        tree.levelOrderTraverse(tree.root);
+        tree.breadthFirstTraverse(tree.root);
+        System.out.println();
+        System.out.println("dfs order");
+        tree.depthFirstTraverse(tree.root);
         System.out.println();
         System.out.println("do mirror");
         tree.mirror(tree.root);
         System.out.println();
         System.out.println("level order");
-        tree.levelOrderTraverse(tree.root);
+        tree.breadthFirstTraverse(tree.root);
         System.out.println();
         System.out.println("do mirror");
         tree.mirror(tree.root);
@@ -259,7 +276,7 @@ public class BinaryTree<T extends  Comparable<T>> {
 
         tree.deleteNode(4);
         System.out.println("level order");
-        tree.levelOrderTraverse(tree.root);
+        tree.breadthFirstTraverse(tree.root);
 
     }
 }
