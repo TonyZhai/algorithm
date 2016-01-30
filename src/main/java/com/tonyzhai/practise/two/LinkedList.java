@@ -56,6 +56,24 @@ public class LinkedList<T> {
         }
         size--;
     }
+
+    public void reverse(){
+        if(head == null || head.next == null){
+            return;
+        }
+        Node previous = head;
+        Node current = head.next;
+        Node temp = head;
+        while(current != null){
+            temp = current.next;
+            current.next = previous;
+            previous = current;
+            current = temp;
+        }
+        head.next = null;
+        head = previous;
+    }
+
     class Node<T>{
         T data;
         Node<T> next;
@@ -80,7 +98,7 @@ public class LinkedList<T> {
         list.add(9);
         list.add(10);
         list.add(11);
-
+        list.reverse();
         System.out.println(list.get(5));
 
         list.remove(8);
