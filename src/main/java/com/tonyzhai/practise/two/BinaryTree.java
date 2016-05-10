@@ -61,7 +61,6 @@ public class BinaryTree<T extends  Comparable<T>> {
 
     public void addNode(T data){
         Node node = new Node(data);
-        if(node == null) return;
         if(root == null) {
             root = node;
             return;
@@ -163,7 +162,7 @@ public class BinaryTree<T extends  Comparable<T>> {
             }
         } else if(current.left == null){
             if(current.compareTo(root) == 0) {
-                root = current.left;
+                root = current.right;
             } else if(isLeftNode){
                 parent.left = current.right;
             } else{
@@ -171,7 +170,7 @@ public class BinaryTree<T extends  Comparable<T>> {
             }
         } else if(current.right == null){
             if(current.compareTo(root) == 0){
-                root = current.right;
+                root = current.left;
             } else if(isLeftNode){
                 parent.left = current.left;
             } else {
