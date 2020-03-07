@@ -8,7 +8,7 @@ package com.tonyzhai.algorithm.search;
 public class BinarySearch {
     public static void main(String[] args){
         int[] array = {1, 2, 3, 12, 15, 21, 33, 57, 76, 79, 120};
-        int data1 = 120;
+        int data1 = 80;
         int data2 = 1;
         System.out.println("value " + data1 + " index is "+ search1(array, data1));
         System.out.println("value " + data2 + " index is "+ search2(array, data2));

@@ -2,6 +2,7 @@ package com.tonyzhai.practise.five;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 /**
  * Created by Administrator on 2/2/2016.
@@ -150,6 +151,19 @@ public class BinaryTree {
         }
     }
 
+    public void dfs(){
+        Stack<Node> queue = new Stack<>();
+        if(root == null) return;
+        queue.add(root);
+        Node temp = root;
+        while(!queue.isEmpty()){
+            temp = queue.pop();
+            System.out.print(temp.data + " ");
+            if(temp.left != null) queue.add(temp.left);
+            if(temp.right != null) queue.add(temp.right);
+        }
+    }
+
     public static void main(String[] args) {
         BinaryTree tree = new BinaryTree();
         tree.add(5);
@@ -170,5 +184,8 @@ public class BinaryTree {
         System.out.println();
         System.out.println("bfs");
         tree.bfs();
+        System.out.println();
+        System.out.println("dfs");
+        tree.dfs();
     }
 }
