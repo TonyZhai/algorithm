@@ -1,6 +1,6 @@
-package com.tonyzhai.practise.date20202025;
+package com.tonyzhai.leetcode;
 
-public class LeetCode242 {
+public class LC242 {
 
     public boolean isAnagram(String s, String t) {
         int[] alphabet = new int[26];

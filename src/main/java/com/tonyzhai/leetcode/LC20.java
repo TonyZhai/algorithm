@@ -1,9 +1,9 @@
-package com.tonyzhai.practise.date20202025;
+package com.tonyzhai.leetcode;
 
 
 import java.util.Stack;
 
-public class LeetCode20 {
+public class LC20 {
 
     public boolean isValid(String s) {
         if (s == null || s.length() <= 1) {
@@ -33,6 +33,6 @@ public class LeetCode20 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new LeetCode20().isValid("()"));
+        System.out.println(new LC20().isValid("()"));
     }
 }

@@ -1,4 +1,4 @@
-package com.tonyzhai.practise;
+package com.tonyzhai.leetcode;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ import java.util.List;
  * 依次类推到顶端2，循环执行一下DP方程
  * dp[i][j] = dp[i][j] + min(dp[i + 1][j], dp[i + 1][j + 1])
  */
-public class LeetCode120 {
+public class LC120 {
 
     public int minimumTotal(List<List<Integer>> triangle) {
         int length = triangle.size();

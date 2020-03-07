@@ -1,4 +1,4 @@
-package com.tonyzhai.algorithm.leetcode;
+package com.tonyzhai.leetcode;
 
 /**
  Example 1:
@@ -19,7 +19,7 @@ package com.tonyzhai.algorithm.leetcode;
  k = 3
  return [9, 8, 9]
  */
-public class CreateMaximumNumber {
+public class LC321 {
 
     /**
      * divide k to i and k - i, then find every merge result, last find the largest one

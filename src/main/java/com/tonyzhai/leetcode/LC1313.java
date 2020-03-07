@@ -1,9 +1,9 @@
-package com.tonyzhai.practise.date20200223;
+package com.tonyzhai.leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Leetcode {
+public class LC1313 {
 
     public static int[] decompressRLElist(int[] nums) {
         for (int k = 0; k < nums.length; k++) {

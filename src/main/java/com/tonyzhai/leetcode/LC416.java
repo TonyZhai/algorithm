@@ -1,9 +1,9 @@
-package com.tonyzhai.practise;
+package com.tonyzhai.leetcode;
 
 import java.util.Arrays;
 
 
-public class LeetCode416 {
+public class LC416 {
 
     public boolean canPartition(int[] nums) {
         int sum = 0;
@@ -88,7 +88,7 @@ public class LeetCode416 {
     }
 
     public static void main(String[] args) {
-        new LeetCode416().canPartition(new int[]{1, 5, 11, 5});
-        new LeetCode416().canPartition1(new int[]{1, 5, 11, 5});
+        new LC416().canPartition(new int[]{1, 5, 11, 5});
+        new LC416().canPartition1(new int[]{1, 5, 11, 5});
     }
 }

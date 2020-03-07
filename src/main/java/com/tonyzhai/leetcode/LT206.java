@@ -1,4 +1,4 @@
-package com.tonyzhai.practise.date20200224;
+package com.tonyzhai.leetcode;
 
 /**
  * Definition for singly-linked list.

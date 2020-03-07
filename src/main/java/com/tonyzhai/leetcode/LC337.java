@@ -1,4 +1,4 @@
-package com.tonyzhai.algorithm.leetcode;
+package com.tonyzhai.leetcode;
 
 import sun.reflect.generics.tree.Tree;
 
@@ -38,7 +38,7 @@ import sun.reflect.generics.tree.Tree;
 
  状态转移方程见代码。
  */
-public class HouseRobber3 {
+public class LC337 {
     public static class TreeNode {
         int val;
         TreeNode left;
@@ -66,12 +66,12 @@ public class HouseRobber3 {
     }
 
     public static void main(String[] args) {
-        TreeNode root = new HouseRobber3.TreeNode(3);
-        TreeNode node2 = new HouseRobber3.TreeNode(4);
-        TreeNode node3 = new HouseRobber3.TreeNode(5);
-        TreeNode node4 = new HouseRobber3.TreeNode(1);
-        TreeNode node5 = new HouseRobber3.TreeNode(3);
-        TreeNode node6 = new HouseRobber3.TreeNode(1);
+        TreeNode root = new LC337.TreeNode(3);
+        TreeNode node2 = new LC337.TreeNode(4);
+        TreeNode node3 = new LC337.TreeNode(5);
+        TreeNode node4 = new LC337.TreeNode(1);
+        TreeNode node5 = new LC337.TreeNode(3);
+        TreeNode node6 = new LC337.TreeNode(1);
         root.left = node2;
         root.right = node3;
         node2.left = node4;

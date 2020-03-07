@@ -1,4 +1,4 @@
-package com.tonyzhai.practise.four;
+package com.tonyzhai.algorithm;
 
 /**
  * Created by Administrator on 1/30/2016.

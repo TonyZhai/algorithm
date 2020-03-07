@@ -1,4 +1,4 @@
-package com.tonyzhai.algorithm.leetcode;
+package com.tonyzhai.leetcode;
 
 /**
  Example 1:
@@ -9,7 +9,7 @@ package com.tonyzhai.algorithm.leetcode;
  coins = [2], amount = 3
  return -1
  */
-public class CoinChange {
+public class LC332 {
     public int coinChange(int[] coins, int amount) {
         if(amount == 0){
             return 0;

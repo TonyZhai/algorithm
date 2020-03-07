@@ -1,4 +1,4 @@
-package com.tonyzhai.algorithm.common;
+package com.tonyzhai.algorithm;
 
 /**
  * 1  2  3  4

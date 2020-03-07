@@ -1,4 +1,4 @@
-package com.tonyzhai.algorithm.leetcode;
+package com.tonyzhai.leetcode;
 
 /*
  Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1's in their binary representation and return them as an array.
@@ -26,7 +26,7 @@ package com.tonyzhai.algorithm.leetcode;
 
 容易发现，除了11最右边那个位和5的最高位，其他位对应一样。也就是说i用二进制表示时1出现的次数等于i/2中1出现的次数加1（如果i用二进制表示时最右边一位为1，否则不加1）。这样我们在计算i时可以利用前面已计算出的i/2：ret[i] = ret[i/2] + (i % 2 == 0 ? 0 : 1);
  */
-public class CountBits {
+public class LC338 {
     public static int[] countBits1(int num){
         assert num >= 0;
         int[] bits = new int[num + 1];

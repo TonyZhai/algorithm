@@ -1,4 +1,4 @@
-package com.tonyzhai.algorithm.leetcode;
+package com.tonyzhai.leetcode;
 
 /**
  * Given an integer array nums, find the contiguous subarray (containing at least one number)
