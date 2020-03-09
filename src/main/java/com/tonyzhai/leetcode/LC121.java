@@ -18,6 +18,8 @@ package com.tonyzhai.leetcode;
  * Input: [7,6,4,3,1]
  * Output: 0
  * Explanation: In this case, no transaction is done, i.e. max profit = 0.
+ *
+ * see: 122, 123, 309, 188, 714
  */
 public class LC121 {
 
